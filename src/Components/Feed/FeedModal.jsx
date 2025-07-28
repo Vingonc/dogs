@@ -6,7 +6,7 @@ import Loading from "../Helper/Loading";
 import { PHOTO_GET } from "../../Api";
 import PhotoContent from "../Photo/PhotoContent";
 
-const FeedModal = ({ photo }) => {
+const FeedModal = ({ photo, setModalPhoto }) => {
   const { data, error, loading, request } = useFetch();
 
   React.useEffect(() => {
