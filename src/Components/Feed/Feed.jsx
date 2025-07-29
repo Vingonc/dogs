@@ -9,6 +9,7 @@ const Feed = ({ user }) => {
   const [infinite, setInfinite] = React.useState(true);
 
   React.useEffect(() => {
+    let wait = false;
     function infiniteScroll() {
       if (infinite) {
         const scroll = window.scrollY;
